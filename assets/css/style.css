@@ -80,7 +80,7 @@ header {
 
 .card-body {
   /* min-height: 25px; */
-  min-height: 100px;
+  min-height: 120px;
 }
 
 .card-footer {
@@ -138,10 +138,10 @@ button[disabled] {
   border: none;
   display: block;
   width: 100%;
-  padding-top: 25px;
+  padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 55px;
   font-size: 1.2rem;
   text-align: center;
   margin-top: 10px;
@@ -150,7 +150,8 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
-  color:rgb(61, 255, 116);
+  color:rgb(255, 240, 27);
+  /* color:rgb(61, 255, 116); */
 }
 
 @media (max-width: 690px) {
@@ -161,12 +162,12 @@ button[disabled] {
   }
 
   #password {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 }
 
 @media (max-width: 500px) {
   .btn {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
