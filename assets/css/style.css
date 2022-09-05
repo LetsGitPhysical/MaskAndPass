@@ -1,5 +1,172 @@
-*{
-    box-sizing:border-box;
-    margin:0px;
-    padding:0px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --blueMed: rgb(46, 98, 255);
+  --aquDrk: rgba(32, 56, 91, 0.75);
+  --aquBase: rgb(8, 107, 113,.75);
+  --aquMed: rgb(23, 183, 189);
+  --aquLte: rgb(129, 251, 255);
+  --aquBrt: rgb(164, 252, 255);
+  --magDrk: rgb(103, 11, 63);
+  --magBase: rgb(136, 4, 141);
+  --magMed: rgb(199, 13, 206);
+  --magLte: rgb(255, 35, 204);
+  --darkMed: rgba(30, 30, 30, 1);
+  --gryMedClr: rgba(102, 102, 102, 0.5);
+  --violMed: rgb(140, 44, 225);
+  --yellMed: rgb(168, 168, 41);
+  --yellwHi: rgb(255, 255, 199);
+}
+
+html,body,.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(270deg, rgb(10,10,10) 0%, var(--aquMed) 33%, var(--blueMed) 66%,rgb(10,10,10) 100%);
+}
+
+.wrapper {
+  text-align: center;
+  padding: 20px 10% 10px 10%;
+
+}
+
+header {
+  text-align: center;
+  font-family: MV Boli;
+  padding: 10px;
+  padding-top: 0px;
+  color: hsl(0, 0%, 100%);
+  /* color: hsl(206, 17%, 28%); */
+}
+
+.card {
+  background-image: url("../pics/matrixScreen.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 95%, 42%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+}
+
+.card-header h2{
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: rgba(0, 0,0, 0.75);
+  color: rgb(165, 255, 192);
+  /* color:rgb(35, 255, 68); */
+}
+.card-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: rgb(165, 255, 192); 
+  height: 4px;
+}
+
+.card-body {
+  /* min-height: 25px; */
+  min-height: 100px;
+}
+
+.card-footer {
+  text-align: center;
+}
+
+.card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: rgb(165, 255, 192); 
+  height: 4px;
+}
+
+.card-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.btn {
+  font-family: MV Boli;
+  border: none;
+  background-color: hsl(360, 91%, 36%);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--blueMed);
+}
+
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
+}
+
+.float-right {
+  float: right;
+}
+
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: rgba(10,10,10,.8);
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 10px dotted rgb(165, 255, 192);
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+  color:rgb(61, 255, 116);
+}
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+  }
 }
